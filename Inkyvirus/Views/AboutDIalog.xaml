@@ -1,0 +1,21 @@
+﻿<ContentDialog
+    x:Class="Inkyvirus.Views.AboutDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Inkyvirus.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="About"
+    PrimaryButtonText="Close"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick">
+
+    <StackPanel>
+        <TextBlock FontSize="20" Text="Code and game design: Ktos" />
+        <TextBlock FontSize="20" Text="Music and sound effects: Gravity Sound (CC-BY 4.0)" />
+        <HyperlinkButton Content="https://www.gravitysound.studio/free-music-sound-effects" NavigateUri="https://www.gravitysound.studio/free-music-sound-effects" />
+        <TextBlock FontSize="20" Text='"Graphics": Microsoft Segoe UI Emoji' />
+        <TextBlock FontSize="24" Margin="0,20,0,0" Text="Created during LubJam 2020 in Lublin." />
+        <HyperlinkButton Content="https://globalgamejam.org/2020/jam-sites/lubjam-2020" NavigateUri="https://globalgamejam.org/2020/jam-sites/lubjam-2020" />
+    </StackPanel>
+</ContentDialog>

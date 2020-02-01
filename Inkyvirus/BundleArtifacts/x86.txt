@@ -1,0 +1,2 @@
+MainPackage=E:\Marcin\!Projekty2\TraceRepair\TraceRepair\bin\x86\Debug\Inkyvirus_1.0.0.0_x86_Debug.msix
+SymbolPackage=E:\Marcin\!Projekty2\TraceRepair\TraceRepair\obj\x86\Debug\Symbols\Inkyvirus_1.0.0.0_x86_Debug.appxsym

@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="Inkyvirus.Views.LoserPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Inkyvirus.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <Rectangle Height="150" Fill="Orange" />
+        <TextBlock FontSize="180" Text="😭" TextAlignment="Center" Margin="20" />
+
+        <Button Content="🔃" HorizontalAlignment="Stretch" FontSize="50" Margin="100" Click="Button_Click" />
+        <MediaElement Source="ms-appx:///Assets/Audio/lose.wav" x:Name="loseAudio" />
+    </StackPanel>
+</Page>

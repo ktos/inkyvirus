@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="Inkyvirus.Views.WelcomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Inkyvirus"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <Grid Margin="0,0,0,200">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <Image Height="150" Source="ms-appx:///Assets/inkyvirus-wide.png" />
+            <StackPanel Grid.Column="1" Orientation="Horizontal">
+                <ToggleButton x:Name="soundOn" IsChecked="True" Content="🔊" FontSize="38" Margin="10" Click="soundOn_Click" />
+                <Button Content="❓" FontSize="38" Margin="10" Click="Button_Click_1" />
+            </StackPanel>
+        </Grid>
+
+        <!--<TextBlock FontSize="70" Text="❗❗" TextAlignment="Center" Margin="20" />
+        <TextBlock FontSize="50" Text="🦠🦠➡😷🤧🤒🤮" TextAlignment="Center" Margin="20" />-->
+        <TextBlock FontSize="60" Text="🖊❌🦠      🚫❌💊" TextAlignment="Center" Margin="20" />
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50,0,0">
+            <TextBlock FontSize="50" Text="❓🕺" Margin="20" />
+            <TextBlock FontSize="50" Text="🖊" Margin="20" />
+            <Border BorderBrush="Black" BorderThickness="2" Height="100" Width="500" x:Name="border">
+                <InkCanvas x:Name="ink" />
+            </Border>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <ToggleButton Content="😀" FontSize="38" x:Name="diffEasy" IsChecked="True" Click="diffEasy_Checked" />
+            <ToggleButton Content="😧" FontSize="38" x:Name="diffMedium" Click="diffMedium_Checked" />
+            <ToggleButton Content="😲" FontSize="38" x:Name="diffHard" Click="diffHard_Checked" />
+        </StackPanel>
+
+        <Button Content="▶" HorizontalAlignment="Stretch" FontSize="50" Margin="50" Click="Button_Click" />
+    </StackPanel>
+</Page>
