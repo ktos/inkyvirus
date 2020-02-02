@@ -30,6 +30,6 @@
             </StackPanel>
         </ScrollViewer>
 
-        <MediaElement Source="ms-appx:///Assets/Audio/winner.wav" x:Name="winAudio" />
+        <MediaElement Source="ms-appx:///Assets/Audio/winner.wav" x:Name="winAudio" AutoPlay="False" />
     </Grid>
 </Page>

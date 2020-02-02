@@ -13,6 +13,6 @@
         <TextBlock FontSize="180" Text="😭" TextAlignment="Center" Margin="20" />
 
         <Button Content="🔃" HorizontalAlignment="Stretch" FontSize="50" Margin="100" Click="Button_Click" />
-        <MediaElement Source="ms-appx:///Assets/Audio/lose.wav" x:Name="loseAudio" />
+        <MediaElement Source="ms-appx:///Assets/Audio/lose.wav" x:Name="loseAudio" AutoPlay="False" />
     </StackPanel>
 </Page>
