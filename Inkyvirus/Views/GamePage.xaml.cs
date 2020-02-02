@@ -5,6 +5,7 @@ using System.Linq;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Navigation;
 
 namespace Inkyvirus.Views
 {
@@ -15,6 +16,7 @@ namespace Inkyvirus.Views
     {
         private DispatcherTimer timer;
         private DispatcherTimer timer2;
+        private bool isNavigating = false;
 
         private List<Entity> entities;
         private TimeSpan remainingTime;
@@ -95,16 +97,18 @@ namespace Inkyvirus.Views
             remainingTime -= timer2.Interval;
             time.Text = string.Format("⏳ {0:ss\\,ff}", remainingTime);
 
-            if (remainingTime <= TimeSpan.Zero)
+            if (remainingTime <= TimeSpan.Zero && !isNavigating)
             {
                 timer.Stop();
                 timer2.Stop();
                 if (BacteriaAlive() == 0)
                 {
+                    isNavigating = true;
                     GameState.Win(GameState.CurrentLevelDefinition.AvailableTime - remainingTime);
                 }
                 else
                 {
+                    isNavigating = true;
                     GameState.Lose();
                 }
             }
@@ -186,8 +190,15 @@ namespace Inkyvirus.Views
             {
                 timer.Stop();
                 timer2.Stop();
+                isNavigating = true;
                 GameState.Win(remainingTime);
             }
+        }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            timer.Stop();
+            timer2.Stop();
         }
     }
 }

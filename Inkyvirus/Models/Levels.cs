@@ -27,80 +27,80 @@ namespace Inkyvirus.Models
                     BacteriasMaxSize = 60
                 });
 
-                GameState.Levels.Add(new LevelDefinition
-                {
-                    BacteriasNumber = 7,
-                    PillsNumber = 0,
-                    PillsMaxSize = 60,
-                    PillsMinSize = 28,
-                    PillsBehaviours = new EntityBehaviour[] { EntityBehaviour.FastRandom },
-                    PillPenalty = TimeSpan.FromMilliseconds(0.5),
-                    Background = "👍",
-                    BacteriaBehaviours = new EntityBehaviour[] { EntityBehaviour.Static, EntityBehaviour.SlowRandom },
-                    AvailableTime = TimeSpan.FromSeconds(15),
-                    BacteriasMinSize = 38,
-                    BacteriasMaxSize = 50
-                });
+                //GameState.Levels.Add(new LevelDefinition
+                //{
+                //    BacteriasNumber = 7,
+                //    PillsNumber = 0,
+                //    PillsMaxSize = 60,
+                //    PillsMinSize = 28,
+                //    PillsBehaviours = new EntityBehaviour[] { EntityBehaviour.FastRandom },
+                //    PillPenalty = TimeSpan.FromMilliseconds(0.5),
+                //    Background = "👍",
+                //    BacteriaBehaviours = new EntityBehaviour[] { EntityBehaviour.Static, EntityBehaviour.SlowRandom },
+                //    AvailableTime = TimeSpan.FromSeconds(15),
+                //    BacteriasMinSize = 38,
+                //    BacteriasMaxSize = 50
+                //});
 
-                GameState.Levels.Add(new LevelDefinition
-                {
-                    BacteriasNumber = 9,
-                    PillsNumber = 0,
-                    PillsMaxSize = 60,
-                    PillsMinSize = 28,
-                    PillsBehaviours = new EntityBehaviour[] { EntityBehaviour.FastRandom },
-                    PillPenalty = TimeSpan.FromMilliseconds(0.5),
-                    Background = "🤧",
-                    BacteriaBehaviours = new EntityBehaviour[] { EntityBehaviour.Static, EntityBehaviour.SlowRandom, EntityBehaviour.FastRandom },
-                    AvailableTime = TimeSpan.FromSeconds(15),
-                    BacteriasMinSize = 38,
-                    BacteriasMaxSize = 45
-                });
+                //GameState.Levels.Add(new LevelDefinition
+                //{
+                //    BacteriasNumber = 9,
+                //    PillsNumber = 0,
+                //    PillsMaxSize = 60,
+                //    PillsMinSize = 28,
+                //    PillsBehaviours = new EntityBehaviour[] { EntityBehaviour.FastRandom },
+                //    PillPenalty = TimeSpan.FromMilliseconds(0.5),
+                //    Background = "🤧",
+                //    BacteriaBehaviours = new EntityBehaviour[] { EntityBehaviour.Static, EntityBehaviour.SlowRandom, EntityBehaviour.FastRandom },
+                //    AvailableTime = TimeSpan.FromSeconds(15),
+                //    BacteriasMinSize = 38,
+                //    BacteriasMaxSize = 45
+                //});
 
-                GameState.Levels.Add(new LevelDefinition
-                {
-                    BacteriasNumber = 13,
-                    PillsNumber = 0,
-                    PillsMaxSize = 60,
-                    PillsMinSize = 28,
-                    PillsBehaviours = new EntityBehaviour[] { EntityBehaviour.FastRandom },
-                    PillPenalty = TimeSpan.FromMilliseconds(0.5),
-                    Background = "😷",
-                    BacteriaBehaviours = new EntityBehaviour[] { EntityBehaviour.SlowRandom, EntityBehaviour.FastRandom },
-                    AvailableTime = TimeSpan.FromSeconds(14),
-                    BacteriasMinSize = 38,
-                    BacteriasMaxSize = 45
-                });
+                //GameState.Levels.Add(new LevelDefinition
+                //{
+                //    BacteriasNumber = 13,
+                //    PillsNumber = 0,
+                //    PillsMaxSize = 60,
+                //    PillsMinSize = 28,
+                //    PillsBehaviours = new EntityBehaviour[] { EntityBehaviour.FastRandom },
+                //    PillPenalty = TimeSpan.FromMilliseconds(0.5),
+                //    Background = "😷",
+                //    BacteriaBehaviours = new EntityBehaviour[] { EntityBehaviour.SlowRandom, EntityBehaviour.FastRandom },
+                //    AvailableTime = TimeSpan.FromSeconds(14),
+                //    BacteriasMinSize = 38,
+                //    BacteriasMaxSize = 45
+                //});
 
-                GameState.Levels.Add(new LevelDefinition
-                {
-                    BacteriasNumber = 14,
-                    PillsNumber = 0,
-                    PillsMaxSize = 60,
-                    PillsMinSize = 28,
-                    PillsBehaviours = new EntityBehaviour[] { EntityBehaviour.FastRandom },
-                    PillPenalty = TimeSpan.FromMilliseconds(0.5),
-                    Background = "🤢",
-                    BacteriaBehaviours = new EntityBehaviour[] { EntityBehaviour.FastRandom },
-                    AvailableTime = TimeSpan.FromSeconds(14),
-                    BacteriasMinSize = 38,
-                    BacteriasMaxSize = 45
-                });
+                //GameState.Levels.Add(new LevelDefinition
+                //{
+                //    BacteriasNumber = 14,
+                //    PillsNumber = 0,
+                //    PillsMaxSize = 60,
+                //    PillsMinSize = 28,
+                //    PillsBehaviours = new EntityBehaviour[] { EntityBehaviour.FastRandom },
+                //    PillPenalty = TimeSpan.FromMilliseconds(0.5),
+                //    Background = "🤢",
+                //    BacteriaBehaviours = new EntityBehaviour[] { EntityBehaviour.FastRandom },
+                //    AvailableTime = TimeSpan.FromSeconds(14),
+                //    BacteriasMinSize = 38,
+                //    BacteriasMaxSize = 45
+                //});
 
-                GameState.Levels.Add(new LevelDefinition
-                {
-                    BacteriasNumber = 15,
-                    PillsNumber = 2,
-                    PillsMaxSize = 60,
-                    PillsMinSize = 28,
-                    PillsBehaviours = new EntityBehaviour[] { EntityBehaviour.Static },
-                    PillPenalty = TimeSpan.FromMilliseconds(0.5),
-                    Background = "🦷",
-                    BacteriaBehaviours = new EntityBehaviour[] { EntityBehaviour.FastRandom },
-                    AvailableTime = TimeSpan.FromSeconds(14),
-                    BacteriasMinSize = 38,
-                    BacteriasMaxSize = 45
-                });
+                //GameState.Levels.Add(new LevelDefinition
+                //{
+                //    BacteriasNumber = 15,
+                //    PillsNumber = 2,
+                //    PillsMaxSize = 60,
+                //    PillsMinSize = 28,
+                //    PillsBehaviours = new EntityBehaviour[] { EntityBehaviour.Static },
+                //    PillPenalty = TimeSpan.FromMilliseconds(0.5),
+                //    Background = "🦷",
+                //    BacteriaBehaviours = new EntityBehaviour[] { EntityBehaviour.FastRandom },
+                //    AvailableTime = TimeSpan.FromSeconds(14),
+                //    BacteriasMinSize = 38,
+                //    BacteriasMaxSize = 45
+                //});
             }
             else if (GameState.Difficulty == Difficulty.Medium)
             {
