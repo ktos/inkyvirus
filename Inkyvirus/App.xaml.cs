@@ -8,6 +8,9 @@ using Windows.Media.Playback;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace Inkyvirus
 {
@@ -31,6 +34,8 @@ namespace Inkyvirus
             BackgroundPlayer.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/Audio/background.mp3"));
             BackgroundPlayer.Volume = 0.1;
             BackgroundPlayer.IsLoopingEnabled = true;
+
+            AppCenter.Start("1c1a1a28-6002-4f60-80a3-be505c45eef8", typeof(Analytics), typeof(Crashes));
         }
 
         public static MediaPlayer BackgroundPlayer { get; private set; }
