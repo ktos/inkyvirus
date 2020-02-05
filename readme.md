@@ -74,4 +74,5 @@ More
 
 * [Inkyvirus on GGJ2020 website](https://globalgamejam.org/2020/games/inkyvirus-4),
 * [Video of the game](https://ktos.blob.core.windows.net/trash/inkyvirus.mp4),
-* [Beta version downloads](https://install.appcenter.ms/users/ktos/apps/inkyvirus/distribution_groups/beta%20testers).
+* [Beta version downloads](https://install.appcenter.ms/users/ktos/apps/inkyvirus/distribution_groups/beta%20testers),
+* [Inkyvirus at Microsoft Store](https://www.microsoft.com/store/apps/9NRSDDV4NHTR).
